@@ -14,7 +14,7 @@ public class binaerBaum {
     }
 
     public binaerBaum () {
-        binaerBaum baum = new binaerBaum(5, "default");
+        this(5, "default");
     }
 
     public binaerBaum (int zahl, String name) {
