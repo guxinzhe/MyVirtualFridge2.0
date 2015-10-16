@@ -21,6 +21,7 @@ public class binaerBaum {
         anzahl = zahl;
         this.name = name;
         firstTimeUse = false;
+        int i = 5+5;
     }
 
 }
