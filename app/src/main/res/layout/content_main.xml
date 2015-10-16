@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:text="Hello liebe Leute, los gehts! Projekt KÜHHHLEN!!"
+        android:text="Hello liebe Leute, los gehts! Projekt KÜHHHLEN!!!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
