@@ -9,7 +9,7 @@ public class binaerBaum {
 
     public void main (String[] args) {
         System.out.print("lol");
-        System.out.print("PETER LUSTIG :)")
+        System.out.print("PETER LUSTIG :)");
 
     }
 
