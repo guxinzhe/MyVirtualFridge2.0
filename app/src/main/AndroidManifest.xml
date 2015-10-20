@@ -19,5 +19,5 @@
             </intent-filter>
         </activity>
     </application>
-
+    < android:minSdkVersion="11"><a/>
 </manifest>
