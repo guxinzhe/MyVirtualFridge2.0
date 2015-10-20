@@ -1,5 +1,3 @@
-package bjoernbinzer.myvirtualfridge20;
-
 import android.provider.BaseColumns;
 
 /**

@@ -1,5 +1,3 @@
-package bjoernbinzer.myvirtualfridge20;
-
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -7,7 +5,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Alina on 20.10.2015.
  */
-public class LogDBHelper extends SQLiteOpenHelper {
+public class FridgeDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "fridge.db";
     public static final int DB_VERSION = 1;
@@ -30,7 +28,7 @@ public class LogDBHelper extends SQLiteOpenHelper {
                     COLUMN_PRICE + " double(5,2), " +
                     COLUMN_CATEGORY + " text not null);";
 
-    public LogDBHelper(Context context) {
+    public FridgeDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 

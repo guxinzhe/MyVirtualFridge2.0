@@ -2,8 +2,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import bjoernbinzer.myvirtualfridge20.LogDBHelper;
-
 /**
  * Created by Alina on 20.10.2015.
  */
@@ -12,10 +10,10 @@ import bjoernbinzer.myvirtualfridge20.LogDBHelper;
 
 public class FridgeDB {
 
-    private static LogDBHelper mDBHelper;
+    private static FridgeDBHelper mDBHelper;
 
     public static void createFridgeDB (Context context){
-        mDBHelper = new LogDBHelper(context);
+        mDBHelper = new FridgeDBHelper(context);
     }
 
     public static long insertEntry(int id, String product, String durability,
@@ -27,16 +25,16 @@ public class FridgeDB {
 
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(LogDBHelper.COLUMN_ENTRY_ID, id);
-        values.put(LogDBHelper.COLUMN_PRODUCT, product);
-        values.put(LogDBHelper.COLUMN_DURABILITY, durability);
-        values.put(LogDBHelper.COLUMN_QUANTITY, quantity);
-        values.put(LogDBHelper.COLUMN_UOM, uom);
-        values.put(LogDBHelper.COLUMN_PRICE, price);
-        values.put(LogDBHelper.COLUMN_CATEGORY, category);
+        values.put(FridgeDBHelper.COLUMN_ENTRY_ID, id);
+        values.put(FridgeDBHelper.COLUMN_PRODUCT, product);
+        values.put(FridgeDBHelper.COLUMN_DURABILITY, durability);
+        values.put(FridgeDBHelper.COLUMN_QUANTITY, quantity);
+        values.put(FridgeDBHelper.COLUMN_UOM, uom);
+        values.put(FridgeDBHelper.COLUMN_PRICE, price);
+        values.put(FridgeDBHelper.COLUMN_CATEGORY, category);
 
         //Insert the new row, returning the primary key of the new row
         long newRowId;
-        return newRowId = db.insert(LogDBHelper.TABLE_NAME, null,values);
+        return newRowId = db.insert(FridgeDBHelper.TABLE_NAME, null,values);
     }
 }
